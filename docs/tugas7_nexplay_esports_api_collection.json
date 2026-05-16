@@ -1,0 +1,657 @@
+{
+  "info": {
+    "_postman_id": "a545d8cf-71da-4c1f-a8e2-a12afd8b7ff3",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53696935",
+    "_collection_link": "https://go.postman.co/collection/53696935-a545d8cf-71da-4c1f-a8e2-a12afd8b7ff3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "NexPlay Esports API",
+      "item": [
+        {
+          "name": "Users",
+          "item": [
+            {
+              "name": "Users - Read",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/users/read.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "users",
+                    "read.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Users - Create",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "username",
+                      "value": "Agung",
+                      "type": "text",
+                      "uuid": "b049ed15-0c03-454d-9283-cefde9f22820"
+                    },
+                    {
+                      "key": "email",
+                      "value": "agungajasih1@yahoo.com",
+                      "type": "text",
+                      "uuid": "367a81bc-3fec-4705-8713-724d6aa99dde"
+                    },
+                    {
+                      "key": "tier_member",
+                      "value": "Gold",
+                      "type": "text",
+                      "uuid": "92618d44-6253-4c7d-8e1e-e213058ef392"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/users/create.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "users",
+                    "create.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Users - Update",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/users/update.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "users",
+                    "update.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Users - Delete",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/users/delete.php?user_id=??",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "users",
+                    "delete.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "user_id",
+                      "value": "??"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Gaming Rooms",
+          "item": [
+            {
+              "name": "Gaming Rooms - Read",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/gaming_rooms/read.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "gaming_rooms",
+                    "read.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Gaming Rooms - Create",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/gaming_rooms/create.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "gaming_rooms",
+                    "create.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Gaming Rooms - Update",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/gaming_rooms/update.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "gaming_rooms",
+                    "update.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Gaming Rooms - Delete",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/gaming_rooms/delete.php?room_id=??",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "gaming_rooms",
+                    "delete.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "room_id",
+                      "value": "??"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Payments",
+          "item": [
+            {
+              "name": "Payments - Read",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/payments/read.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "payments",
+                    "read.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Payments - Create",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/payments/create.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "payments",
+                    "create.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Payments - Update",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/payments/update.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "payments",
+                    "update.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Payments - Delete",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/payments/delete.php?payment_id=??",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "payments",
+                    "delete.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "payment_id",
+                      "value": "??"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "PC Setups",
+          "item": [
+            {
+              "name": "PC Setups - Read",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/pc_setups/read.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "pc_setups",
+                    "read.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PC Setups - Create",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/pc_setups/create.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "pc_setups",
+                    "create.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PC Setups - Update",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/pc_setups/update.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "pc_setups",
+                    "update.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PC Setups - Delete",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/pc_setups/delete.php?pc_id=??",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "pc_setups",
+                    "delete.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "pc_id",
+                      "value": "??"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bookings",
+          "item": [
+            {
+              "name": "Bookings - Read",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/bookings/read.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "bookings",
+                    "read.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Bookings - Create",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/bookings/create.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "bookings",
+                    "create.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Bookings - Update",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/bookings/update.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "bookings",
+                    "update.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Bookings - Delete",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/bookings/delete.php?booking_id=??",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "bookings",
+                    "delete.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "booking_id",
+                      "value": "??"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Stats",
+          "item": [
+            {
+              "name": "Stats - Revenue",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/stats/revenue.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "stats",
+                    "revenue.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Stats - Total Bookings",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/stats/total_bookings.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "stats",
+                    "total_bookings.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Stats - Active Bookings",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/stats/active_bookings.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "stats",
+                    "active_bookings.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Stats - Available Rooms",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// Visualization Script",
+                      "// Visualization Script",
+                      "const template = `",
+                      "<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; padding: 24px; background: #f6f8fb; min-height: 100vh; box-sizing: border-box;\">",
+                      "  <div style=\"max-width: 480px; margin: 0 auto;\">",
+                      "    <div style=\"background: #ffffff; border: 1px solid #e6ebf1; border-radius: 16px; padding: 24px; box-shadow: 0 4px 14px rgba(0,0,0,0.06);\">",
+                      "      <div style=\"font-size: 14px; color: #6b7280; margin-bottom: 8px;\">Stats Dashboard</div>",
+                      "      <div style=\"font-size: 28px; font-weight: 700; color: #111827; margin-bottom: 20px;\">Active Bookings</div>",
+                      "      <div style=\"display: inline-block; background: #eef6ff; color: #1d4ed8; font-size: 13px; font-weight: 600; padding: 6px 10px; border-radius: 999px; margin-bottom: 16px;\">Current Total</div>",
+                      "      <div style=\"font-size: 56px; line-height: 1; font-weight: 800; color: #0f172a;\">{{active_bookings}}</div>",
+                      "      <div style=\"margin-top: 16px; font-size: 13px; color: #6b7280;\">Status: {{statusLabel}}</div>",
+                      "    </div>",
+                      "  </div>",
+                      "</div>`;",
+                      "",
+                      "function createPayload() {",
+                      "  let data = {};",
+                      "",
+                      "  try {",
+                      "    data = pm.response.json();",
+                      "  } catch (e) {",
+                      "    data = {};",
+                      "  }",
+                      "",
+                      "  const activeBookingsRaw = data && data.active_bookings !== undefined && data.active_bookings !== null",
+                      "    ? data.active_bookings",
+                      "    : 'N/A';",
+                      "",
+                      "  return {",
+                      "    active_bookings: String(activeBookingsRaw),",
+                      "    statusLabel: data && data.status === true ? 'Success' : 'Unavailable'",
+                      "  };",
+                      "}",
+                      "",
+                      "pm.visualizer.set(template, createPayload());"
+                    ],
+                    "type": "text/javascript",
+                    "packages": {},
+                    "requests": {}
+                  }
+                }
+              ],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/nexplay_api/api/stats/available_rooms.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "nexplay_api",
+                    "api",
+                    "stats",
+                    "available_rooms.php"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
