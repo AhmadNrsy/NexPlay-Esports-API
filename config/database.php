@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user = "root";
-$password = "?password?";
+$password = "12450111761";
 $database = "db_nexplay_esports";
 
 $conn = mysqli_connect($host, $user, $password, $database);

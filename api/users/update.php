@@ -3,6 +3,10 @@
 header("Content-Type: application/json");
 
 include "../../config/database.php";
+include "../../middleware/auth.php";  // ← Tambahan untuk protect Endpoint ini dengan token
+
+// Validasi token dulu
+validate_token($conn);
 
 // Ambil data dari form
 $user_id = $_POST['user_id'] ?? '';
