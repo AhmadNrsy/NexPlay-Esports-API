@@ -7,14 +7,11 @@
 function validate_token($conn)
 {
 
-    // Ambil Authorization header dari request
-    // PHP kadang naruhnya di getallheaders(), kadang di $_SERVER
     $auth_header = '';
 
     if (function_exists('getallheaders')) {
         $headers = getallheaders();
-        // getallheaders() key-nya case-insensitive tergantung server
-        // Kita loop untuk cari "Authorization" (aman di semua kondisi)
+
         foreach ($headers as $key => $value) {
             if (strtolower($key) === 'authorization') {
                 $auth_header = $value;
@@ -23,7 +20,6 @@ function validate_token($conn)
         }
     }
 
-    // Fallback: cek di $_SERVER (Apache mod_rewrite kadang naruh di sini)
     if (empty($auth_header) && isset($_SERVER['HTTP_AUTHORIZATION'])) {
         $auth_header = $_SERVER['HTTP_AUTHORIZATION'];
     }
@@ -83,16 +79,11 @@ function validate_token($conn)
         exit;
     }
 
-    // Token valid! Return data admin (opsional, bisa dipakai endpoint kalau perlu)
+    // Token valid! Return data admin.
     $admin = mysqli_fetch_assoc($result);
     return $admin;
 }
 
-// ────────────────────────────────────────────────────────────
-// Fungsi helper: generate_token()
-// Membuat random hex string 64 karakter (32 byte)
-// Lebih kuat dari uniqid() atau md5(time())
-// ────────────────────────────────────────────────────────────
 
 function generate_token()
 {
