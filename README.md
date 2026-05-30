@@ -50,7 +50,7 @@ POST /api/auth/login.php
 
 ```json
 {
-  "username": "admin",
+  "username": "admin / ahmaddianaja14@gmail.com",
   "password": "nexplay123"
 }
 ```
