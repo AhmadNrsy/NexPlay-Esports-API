@@ -8,8 +8,6 @@ Project ini dibuat menggunakan PHP Native dan MySQL dengan sistem autentikasi Be
 # 👨‍💻 Disusun Oleh
 
 - **Nama:** Ahmad Nurdiansyah
-- **NIM:** 12450111761
-- **Kelas:** E (Semester 4)
 
 ---
 
